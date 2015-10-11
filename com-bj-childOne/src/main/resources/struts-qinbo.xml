@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+
+	<package name="qinbo" extends="json-default" namespace="/qinbo">
+
+		<action name="*/*" class="com.chunbo.qinbo.action.{1}" method="{2}">
+			<result name="JSONResult" type="json">
+				<param name="root">jsonResult</param>
+			</result>
+
+			<result name="giftRecord">
+			/page/giftRecordNew.jsp
+			</result>
+		</action>
+
+	</package>
+
+</struts>
