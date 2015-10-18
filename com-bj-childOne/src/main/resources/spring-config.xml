@@ -12,21 +12,19 @@
 		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
 		<property name="locations">
 			<list>
-				<value>classpath:system-config/security-conf.properties</value>
-				<value>classpath:system-config/system-conf.properties</value>
-				<value>classpath:system-config/db-conf.properties</value>
+				<value>classpath:system-config/*.properties</value>
 			</list>
 		</property>
 	</bean>
 
-	<import resource="spring-config/spring-config-datasource.xml" />
+	<!-- <import resource="spring-config/spring-config-datasource.xml" />
 	<import resource="spring-config/spring-config-dao.xml" />
-	<import resource="spring-config/spring-config-service.xml" />
-	
+	<import resource="spring-config/spring-config-service.xml" /> -->
+	<import resource="spring-config/spring-config-*.xml"/>
 
 	<!-- 使Spring关注Annotation -->
 	<context:annotation-config />
 	<!-- Add this tag to enable annotations transactions -->
 	<tx:annotation-driven  transaction-manager="transactionManager"/>
-		<context:component-scan base-package="com.chunbo.qinbo" />
+		<context:component-scan base-package="com.bj" />
 </beans>

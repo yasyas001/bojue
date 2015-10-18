@@ -18,7 +18,8 @@ request.setAttribute("basePath", _basePath);
 <meta http-equiv="Cache-Control" content="no-store, must-revalidate"> 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <!-- Bootstrap -->
-<link href="${basePath }/js/bootstrap-3.3.4/css/bootstrap.min.css" rel="stylesheet">
+<link href="${basePath }/js/bootstrap-3.3.4/css/bootstrap-combined.min.css" rel="stylesheet">
+<%-- <link href="${basePath }/js/bootstrap-3.3.4/css/bootstrap.min.css" rel="stylesheet"> --%>
 <script type="text/javascript" src="${basePath }/js/jquery-1.10.2.min.js"></script>
 <script src="${basePath }/js/bootstrap-3.3.4/js/bootstrap.min.js"></script>
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->

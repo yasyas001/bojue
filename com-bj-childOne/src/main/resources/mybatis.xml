@@ -18,7 +18,7 @@
 	</typeAliases>  
 
 	<mappers>  
-		<!-- <mapper resource="mybatis-sqlmap/giftRecord.xml" /> -->
+		<mapper resource="mybatis-sqlmap/indexManager.xml" />
 	</mappers>
 	
 

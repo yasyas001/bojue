@@ -6,8 +6,13 @@
 	<constant name="struts.mapper.alwaysSelectFullNamespace" value="false" />
 	<constant name="struts.enable.DynamidMethodInvocation" value="true" />
 	
+	<!-- 名称方式自动匹配 Struts Action 和 Spring 的 Bean -->
+	<constant name="struts.objectFactory.spring.autoWire" value="name" />
+	<constant name="struts.objectFactory" value="spring" />
+	<!-- 将上传文件的默认大小2M改为2G -->
+	<constant name="struts.multipart.maxSize" value="2097152000" />
 	
-	<include file="struts-qinbo.xml" />
+	<include file="struts-config/struts-*.xml" />
 </struts>
 
 
